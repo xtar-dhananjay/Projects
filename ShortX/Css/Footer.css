@@ -1,0 +1,94 @@
+#Main-Footer-1{
+    background: var(--First-Color);
+}
+
+#Main-Footer-2{
+    max-width: 1000px;
+    width: 100%;
+    /* background: red; */
+    margin: auto;
+    padding: 0 20px;
+}
+
+#Footer-Logo img{
+    width: 250px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+#Footer-Pages{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Footer-Course{
+    display: flex;
+    width: 300px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+#Footer-Pages li{
+    list-style: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+#Footer-Pages li a{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--White-Color);
+    text-decoration: none;
+}
+
+#Footer-Pages li:hover{
+    margin-left: 3px;
+}
+
+#Footer-Pages h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--White-Color);
+}
+
+#Social-Links ul{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+#Social-Links ul li a img{
+    width: 35px;
+}
+
+#Main-Footer-2 p{
+    padding: 20px 0 15px 0;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--White-Color);
+    text-align: center;
+}
+
+
+@media (max-width: 700px){
+    #Footer-Pages{
+        flex-direction: column;
+    }
+
+    #Footer-Pages div{
+        margin-bottom: 20px;
+    }
+
+    #Footer-Pages li:hover{
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 350px){
+    #Footer-Course{
+        flex-direction: column;
+    }
+}

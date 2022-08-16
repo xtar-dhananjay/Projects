@@ -1,0 +1,36 @@
+#Main-CheckEamil{
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#CheckEmail-1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#CheckEmail-1 #Email-Message{
+    background: var(--Light-Blue);
+    border: 1px solid var(--First-Color);
+    max-width: 100%;
+    width: 500px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+#Email-Message p{
+    color: var(--Para-Color);
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+@media (max-width: 500px){
+
+    #Email-Message p{
+        font-size: 16px;
+    }
+    #CheckEmail-1 #Email-Message{
+        padding: 25px 12px;
+    }
+}

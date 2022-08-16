@@ -1,0 +1,417 @@
+#Main-Home{
+    margin: auto;
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+#Home-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#Home-Title h1{
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--Font-Color);
+}
+
+#Home-Title h1 span{
+    font-weight: 700;
+    color: var(--First-Color);
+}
+
+#Home-Title p{
+    border-left: 5px solid var(--First-Color);
+    margin: 30px 0;
+    padding: 18px 10px 18px;
+    text-align: justify;
+    color: var(--Para-Color);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#Home-Title button{
+    background: var(--First-Color);
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+    color: var(--White-Color);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#Home-Title button:active{
+    transform: scale(0.98);
+}
+
+#Main-Home hr{
+    margin-top: 70px;
+    height: 4px;
+    background: var(--First-Color);
+    border: none;
+}
+
+/* #Home-2 */
+#Home-2 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--Font-Color);
+    margin: 50px 0;
+}
+
+#Benefit{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Benefit div{
+    border: 1px solid var(--First-Color);
+    text-align: center;
+    padding: 20px 10px;
+    width: 310px;
+    border-radius: 3px;
+    background: var(--Light-Blue);
+    max-width: 32%;
+}
+
+#Benefit div img{
+    margin-bottom: 20px;
+}
+
+#Benefit div p{
+    color: var(--Para-Color);
+    font-weight: 400;
+}
+
+/* #Home-3 */
+#Home-3 #Home-3-Title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--Font-Color);
+    margin: 50px 0;
+}
+
+#Top-Courses{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Course{
+    max-width: 32%;
+    border: 1px solid var(--First-Color);
+    width: 310px;
+    border-radius: 3px;
+    background: var(--Light-Blue);
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.Course img{
+    width: 95%;
+    border-radius: 2px;
+    border: 1px solid var(--Light-Blue);
+}
+
+.Course .Ratings{
+    color: var(--Second-Color);
+    display: flex;
+    margin: 5px 0 5px 10px;
+}
+
+:is(.Course .Ratings, .Course .Price-Per) .material-icons{
+    font-size: 30px;
+}
+
+.Course .Ratings .material-icons.Dactive{
+    color: lightgray;
+}
+
+.Course .Price-Per, .Course .Price-Per span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Course .Price-Per{
+    padding: 0 10px;
+}
+
+
+.Course .Price-Per span:last-child{
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+.Course h2{
+    font-size: 19px;
+    margin: 3px 0;
+    color: var(--Font-Color);
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.Course button{
+    background: var(--First-Color);
+    color: var(--White-Color);
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Course button:active{
+    transform: scale(0.98);
+}
+
+.Course .Price-Per .material-icons{
+    color: var(--First-Color);
+}
+
+/* Home-4 */
+#Home-4 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--Font-Color);
+    margin: 50px 0;
+}
+
+#Teachers{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Teachers .Teacher{
+    border: 1px solid var(--First-Color);
+    width: 300px;
+    text-align: center;
+    max-width: 32%;
+}
+
+#Teachers .Teacher .Social-Link{
+    border-top: 1px solid var(--First-Color);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Teachers .Teacher .TeacherPhoto{
+    width: 95%;
+    padding: 10px 0;
+}
+
+#Teachers .Teacher p{
+    font-size: 20px;
+    color: var(--Font-Blue);
+    margin-bottom: 15px;
+}
+
+#Teachers .Teacher .Social-Link img{
+    width: 38px;
+}
+
+/* Home 5 */
+#Home-5{
+    margin-bottom: 120px;
+}
+
+#Home-5 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--First-Color);
+    margin: 50px 0;
+    margin-top: 170px;
+}
+
+#QA-Container .QA{
+    margin-bottom: 10px;
+}
+
+#QA-Container .Quation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    background: var(--Light-Blue);
+    align-items: center;
+}
+
+#QA-Container .Quation h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--Font-Color);
+}
+
+#QA-Container .Quation .material-icons{
+    font-size: 40px;
+    color: var(--Font-Color);
+    cursor: pointer;
+    user-select: none;
+    margin-left: 10px;
+}
+
+#QA-Container p{
+    width: 100%;
+    background: var(--Light-Blue);
+    border-radius: 0 0 3px 3px;
+    font-size: 17px;
+    color: var(--Font-Color);
+    padding: 0 30px;
+    transition: padding 0.3s cubic-bezier(0.13, 1, 0.36, 1.26);
+    text-align: justify;
+}
+
+#QA-Container p{
+    height: 0;
+    overflow: hidden;
+}
+
+#QA-Container p.QAactive{
+    height: auto;
+    padding: 20px 30px;
+    border-top: 1px solid var(--First-Color);
+    overflow: auto;
+}
+
+
+/* This is for Text Effect */
+#Text{
+    position: relative;
+    z-index: -1;
+
+}
+
+#Text::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 3px;
+    left: 0 ;
+    background: var(--White-Color);
+    border-left: 4px solid var(--Font-Color);
+    animation: Animate 4s steps(12) infinite;
+}
+
+@keyframes Animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+/* Make Responsive Home Page */
+
+
+@media (max-width: 900px){
+    #Home-Title h1{
+        font-size: 33px;
+    }
+    #Text::before {
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 800px){
+    #Home-Title h1{
+        font-size: 30px;
+    }
+    #Text::before {
+        height: 35px;
+    }
+}
+
+@media (max-width: 770px) {
+    
+    #Text::before{
+        height: 40px;    
+        top: 2px;
+    }
+
+    #Main-Home{
+        max-width: 100%;
+    }
+    
+    #Home-1{
+        flex-direction: column;
+    }
+
+    #Home-Img1 img{
+        width: 100%;
+    }
+
+    #Home-Title h1 {
+        font-size: 32px;
+    }
+
+    #Home-5 h2, #Home-4 h2, #Home-3 #Home-3-Title, #Home-2 h2{
+        font-size: 30px;
+    }
+
+    #Home-5 h2{
+        margin-top: 100px;
+    }
+
+    #Home-Title p{
+        font-size: 14px;
+    }
+
+    #Benefit, #Top-Courses, #Teachers{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Benefit div, .Course, #Teachers .Teacher{
+        margin-bottom: 15px;
+    }
+    
+    :is(#Benefit div, .Course, #Teachers .Teacher):last-child{
+        margin-bottom: 0;
+    }
+
+    #QA-Container .Quation h3{
+        font-size: 18px;
+    }
+
+    #QA-Container .Quation{
+        padding: 10px 18px;
+    }
+
+    #QA-Container .Quation .material-icons{
+        cursor: default;
+    }
+
+    
+    .Course, #Benefit div, #Teachers .Teacher{
+        min-width: 320px;
+    }
+
+    #QA-Container .Quation .material-icons{
+        /* cursor: default; */
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .Course, #Benefit div, #Teachers .Teacher{
+        min-width: 98%;
+    }
+}

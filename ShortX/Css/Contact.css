@@ -1,0 +1,109 @@
+#Main-Contact{
+    max-width: 100%;
+    width: 1000px;
+    height: 39px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Contact-1 */
+#Contact-1{
+    margin-top: 50px;
+}
+
+#Contact-Form{
+    border-radius: 5px;
+    background: var(--Light-Blue);
+    border: 1px solid var(--First-Color);
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+#Contact-Form h2{
+    text-align: center;
+    border-bottom: 1px solid var(--First-Color);
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--First-Color);
+}
+
+#Contact-Form form{
+    padding: 20px;
+
+}
+
+#Contact-Form form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Contact-Form form input{
+    width: 48%;
+    height: 40px;
+    border: 1px solid var(--White-Color);
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 0 20px;
+    outline: none;
+}
+
+#Contact-Form form textarea{
+    width: 100%;
+    margin-top: 10px;
+    height: 150px;
+    border: 1px solid var(--White-Color);
+    padding: 15px 20px;
+    font-size: 17px;
+    outline: none;
+    resize: none;
+    max-height: 150px;
+}
+
+#Contact-Box{
+    text-align: center;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#Contact-Form form button{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background: var(--First-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+#Contact-Form form button:active{
+    transform: scale(0.99);
+}
+
+@media (max-width: 600px){
+
+    #Contact-Form form div{
+        flex-direction: column;
+    }
+
+    #Contact-Form form div input:last-child{
+        margin-top: 10px;
+    }
+
+    #Contact-Form form div input{
+        width: 100%;
+    }
+    
+}

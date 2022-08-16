@@ -1,0 +1,338 @@
+#Main-Details{
+    max-width: 100%;
+    width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Details-1 */
+#Course-Box{
+    width: 100%;
+    background: rgba(43, 78, 255, 0.3);
+    border: 1px solid var(--First-Color);
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+#CourseB-Details, #CourseBenner{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+#CourseB-Details{
+    padding: 10px 20px;
+}
+
+#CourseBenner #Video{
+    width: 100%;
+}
+
+#CourseB-Details h2{
+    font-size: 25px;
+    color: var(--Font-Color);
+    font-weight: 500;
+}
+
+#Benner-Ratings{
+    margin: 2px 0;
+    color: var(--First-Color);
+}
+
+#Benner-Ratings .material-icons{
+    font-size: 32px;
+}
+
+#Benner-Ratings .material-icons.Down{
+    color: rgb(146, 146, 146);
+}
+
+#CourseB-Details #Course-Price{
+    font-size: 30px;
+    color: var(--First-Color);
+}
+
+#CourseB-Details #Benner-Total{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+:is(#CourseB-Details #Benner-Total) #Admintion, #Duration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Duration{
+    margin-left: 100px;
+}
+
+#CourseB-Details #Benner-Total .material-icons{
+    font-size: 30px;
+    margin-right: 5px;
+    color: var(--First-Color);
+}
+
+#CourseB-Details button{
+    background: var(--First-Color);
+    color: var(--White-Color);
+    width: 300px;
+    max-width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#CourseB-Details button:active{
+    transform: scale(0.99);
+}
+
+#CourseB-Details p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--Font-Color);   
+}
+
+#Admintion-Title,#Duration-Title{
+    font-size: 19px;
+}
+
+/* Details-2 */
+
+#Details-2{
+    margin-top: 20px;
+}
+
+#Matrials{
+    display: flex;
+    background: rgba(43, 78, 255, 0.6);
+    padding: 40px 30px;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Matrials div img{
+    height: 90px;
+}
+
+#Matrials div p{
+    margin-top: 10px;
+    color: var(--White-Color);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Details-3 */
+#Details-3{
+    margin-top: 50px;
+}
+
+#Detials-List #List1{
+    margin-bottom: 30px;
+}
+
+#Detials-List div h2{
+    font-size: 35px;
+    color: var(--Font-Color);
+    margin-bottom: 15px;
+}
+
+#Detials-List div ul li{
+    font-size: 22px;
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+#Detials-List div ul li::before{
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background: var(--First-Color);
+    left: -30px;
+    border-radius: 50%;
+    top: 0;
+    margin-top: 6px;
+}
+
+#Detials-List div ul{
+    margin-left: 60px;
+}
+
+/* Details-4 */
+#Details-4{
+    margin-top: 50px;
+}
+
+#Student-Review h2{
+    text-align: center;
+    padding: 12px 0;
+    color: var(--First-Color);
+    font-weight: 500;
+    background: var(--Light-Blue);
+    border: 1px solid var(--First-Color);
+    margin-bottom: 20px;
+}
+
+#Student-Review #AllReviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#Student-Review #AllReviews .Review{
+    width: 32%;
+    background: var(--Light-Blue);
+    border: 1px solid #2b4eff33;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+#Student-Review #AllReviews .Review img{
+    width: 53px;
+    height: 53px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#Student-Review #AllReviews .Review .Review-Details{
+    display: flex;
+    align-items: center;
+    
+}
+
+#Student-Review #AllReviews .Review .Student-Dtails{
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Student-Review #AllReviews .Review .Student-Dtails .SutdentName{
+    font-size: 17px;
+}
+
+#Student-Review #AllReviews .Review .Student-Dtails .material-icons{
+    color: var(--Second-Color);
+    font-size: 19px;
+}
+
+#Student-Review #AllReviews .Review .Student-Dtails .material-icons.Down{
+    color: gray;
+}
+
+#Student-Review #AllReviews .Review p{
+    text-align: justify;
+    color: var(--Para-Color);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* Details-5 */
+#Details-5{
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+#LoadMoreBtn{
+    text-align: center;
+}
+
+#LoadMoreBtn button{
+    padding: 10px 50px;
+    font-size: 20px;
+    color: var(--White-Color);
+    border: none;
+    background: var(--First-Color);
+    outline: none;
+    border-radius: 2px;
+    font-weight: 400;  
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+#LoadMoreBtn button:active{
+    transform: scale(0.98);
+}
+
+/* Male Responsive */
+@media (max-width: 810px){
+    #Course-Box{
+        flex-direction: column;
+    }
+
+    #Student-Review #AllReviews{
+        justify-content: space-evenly;
+    }
+
+    #Student-Review #AllReviews .Review{
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 750px){
+    #Matrials{
+        flex-wrap: wrap;
+    }
+
+    #Matrials div{
+        height: 190px;
+        margin-bottom: 100px;
+    }
+
+    #Matrials div:nth-child(3), #Matrials div:nth-child(4){
+        margin-bottom: 50px;
+    }
+
+    #Matrials div img{
+        height: 100%;
+    }
+
+    #Matrials div p{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    #Student-Review #AllReviews .Review{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 500px){
+    #Matrials div:nth-child(3){
+        margin-bottom: 100px;
+    }
+    #CourseB-Details{
+        padding: 10px 5px;
+    }   
+    #Course-Box {
+        padding: 10px;
+    }
+    #CourseB-Details h2 {
+        font-size: 22px;
+    }
+    #Benner-Ratings .material-icons{
+        font-size: 28px;
+    }
+    #CourseB-Details #Course-Price {
+        font-size: 26px;
+    }
+    
+    
+}

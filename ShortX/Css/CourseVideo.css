@@ -1,0 +1,356 @@
+#Main-CourseVideo{
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+#Main-CourseVideo button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Main-CourseVideo button:active{
+    transform: scale(0.98);
+}
+
+/* CourseVideo-1 */
+#CourseVideo-1{
+    margin-top: 20px;
+}
+
+#Video-Player{
+    display: flex;
+    border: 1px solid var(--First-Color);
+    border-radius: 4px;
+    padding: 20px 15px;
+    background: var(--Light-Blue);
+}
+
+
+#Main-Video video{
+    width: 100%;
+    max-height: 300px;
+}
+
+#Main-Video{
+    width: 550px;
+    min-width: 55%;
+    margin-right: 20px;
+}
+
+#VideoDetails{
+    margin-top: 20px;
+}
+
+#VideoDetails h2{
+    font-size: 28px;
+    color: var(--Font-Color);
+}
+
+#VideoDetails p{
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: justify;
+    color: var(--Font-Color);
+    padding: 0 20px;    
+    margin-bottom: 20px;
+    height: 100px;
+    overflow: auto;
+    padding: 20px auto;
+}
+
+#Download-Box{
+    border: 1px solid var(--First-Color);
+    text-align: center;
+}
+
+#Download-Box h2{
+    border: 1px solid var(--First-Color);
+    background: var(--First-Color);
+    padding: 10px;
+    color: var(--White-Color);
+    font-weight: 400;
+}
+
+#Download-Box button{
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: var(--White-Color);
+    background: var(--First-Color);
+    outline: none;
+    border-radius: 3px;
+    border: none;
+
+}
+
+#Video-List{
+    height: 650px;
+    overflow: auto;
+    background: rgba(43, 78, 255, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#Video-List .Vid{
+    background: var(--First-Color);
+    padding: 7px;
+    display: flex;
+    height: 90px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+#Video-List .Vid:last-child{
+    margin-bottom: 0;
+}
+
+#Video-List .Vid .Video-Details{
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#Video-List .Vid video{
+    height: 100%;
+}
+
+#Video-List .Vid .Video-Details h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--White-Color);
+}
+
+#Video-List .Vid .Video-Details p{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--White-Color);
+}
+
+#Video-List .Vid.ActiveVideo{
+    background: #585858;
+}
+
+
+/* CourseVideo-2 */
+
+#CourseVideo-2, #CourseVideo-3{
+    margin-top: 10px;
+}
+
+#StartExam, #Comment-Toggle{
+    background: var(--Light-Blue);
+    border-radius: 5px;
+    border: 1px solid var(--First-Color);
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#StartExam h2, #Comment-Toggle h2{
+    font-size: 20px;
+    color: var(--Font-Color);
+    font-weight: 500;
+}
+
+#StartExam button, #Comment-Toggle button{
+    padding: 8px 30px;
+    border: none;
+    background: var(--First-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+
+
+/* CourseVideo-3 */
+
+#CourseVideo-3{
+    background: var(--Light-Blue);
+    border-radius: 5px;
+    border: 1px solid var(--First-Color);
+    margin-bottom: 200px;
+}
+
+#Comment-Toggle{
+    padding: 12px 15px;   
+    border: none;
+    border-radius: 0;
+    background: unset;
+    border-bottom: 1px solid var(--First-Color);    
+}
+
+#Comments-Box{
+    padding: 30px 15px;
+    transition: all 0.3s ease;
+}
+
+#CourseVideo-3 .Active{
+    height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+#Write-Comment{
+    margin: 0 0 80px;
+}
+
+#Write-Comment input{
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background: white;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+#Write-Comment button{
+    float: right;
+    width: 170px;
+    max-width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: var(--White-Color);
+    background: var(--First-Color);
+    border: none;
+    border-radius: 4px;
+}
+
+#All-Comments{
+    margin-bottom: 30px;
+}
+
+#All-Comments .Comment{
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--White-Color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#All-Comments .Comment:last-child{
+    margin-bottom: 0;
+}
+
+#All-Comments .Comment div{
+    display: flex;
+}
+
+#All-Comments .Comment p{
+    margin-top: 10px;
+    color: var(--Para-Color);
+    font-size: 16px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#All-Comments .Comment div .User-Name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#All-Comments .Comment div .User-Name p{
+    font-size: 20px;
+    color: var(--Font-Color);
+    font-weight: 600;
+}
+
+#All-Comments .Comment div .User-Name span{
+    color: var(--First-Color);
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+#All-Comments .Comment div img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#LoadMore-Comments{
+    text-align: center;
+}
+
+#LoadMore-Comments button{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: var(--White-Color);
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--First-Color);
+}
+
+
+@media (max-width: 960px) {
+    #Video-Player{
+        flex-direction: column;
+    }
+    #Main-Video{
+        width: 100%;
+    }
+    #Main-Video video{
+        max-height: 470px;
+    }
+    #Download-Box{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 700px){
+    #Main-CourseVideo button{
+        cursor: default;
+    }
+        
+    #Video-List .Vid{
+        cursor: default;
+    }
+}
+
+@media (max-width: 450px){
+    #Video-List .Vid{
+        flex-direction: column;
+        height: unset;
+    }
+
+    #Video-List .Vid .Video-Details{
+        padding: 8px;
+    }
+
+    #Video-List .Vid .Video-Details h2{
+        margin: 5px 0;
+        font-size: 18px;
+    }
+    #Video-List {
+        padding: 20px 10px;
+    }
+    
+    #StartExam{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #StartExam button{
+        margin-top: 15px;
+    }
+
+
+}

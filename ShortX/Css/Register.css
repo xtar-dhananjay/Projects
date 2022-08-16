@@ -1,0 +1,191 @@
+
+#Main-Register{
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#Register-1{
+    margin: 50px 0 100px;
+}
+
+#Register-Form{
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    background: rgba(43, 78, 255, 0.25);
+    border: 1px solid var(--First-Color);
+    border-radius: 3px;
+}
+
+#Register-Form h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    color: var(--First-Color);
+    border-bottom: 1px solid var(--First-Color);
+}
+
+#Form-Body{
+    padding: 10px 30px;
+}
+
+/* This is for Uplaod Img Area */
+#Form-Body #Upload-Photo{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(43, 78, 255, 0.3);
+    border-radius: 50%;
+    color: var(--First-Color);
+    margin: auto;
+    margin: 8px auto;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#Upload-Photo img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: none;
+}
+
+#Form-Body #Upload-Photo p{
+    font-size: 15px;
+}
+
+#Form-Body #Upload-Photo .material-icons{
+    font-size: 40px;
+}
+
+/* This is for form input fields */
+#Input-Fields{
+    display: flex;
+}
+
+#Input-Col1, #Input-Col2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:is(#Input-Col1, #Input-Col2) input,:is(#Input-Col1, #Input-Col2) select{
+    width: 100%;
+    padding: 0 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid var(--White-Color);
+    background: rgba(255, 255, 255, 0.3);;
+    color: var(--Font-Color);
+    height: 44px;
+    border-radius: 3px;
+
+}
+
+:is(#Input-Col1  input, #Input-Col2, select):first-child{
+    margin-top: 0;
+}
+
+#Input-Col2 div{
+    position: relative;
+}
+
+#Input-Col2 div input{
+    padding-right: 47px;
+}
+
+#Input-Col2 div span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-15px, 82%);
+    cursor: pointer;
+    color: var(--Font-Color);
+    user-select: none;
+}
+
+/* Star Form-Footer */
+#Form-Footer{
+    text-align: center;
+    padding: 0 45px;
+}
+
+#Form-Footer button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    color: var(--White-Color);
+    font-weight: 400;
+    background: var(--First-Color);
+    cursor: pointer;
+}
+
+#Form-Footer p{
+    margin: 0 0 30px 0;
+    color: var(--Font-Color);
+    font-size: 16px;
+}
+
+#Form-Footer a{
+    color: var(--First-Color);
+    text-decoration: none;
+}
+
+
+/* This margin for UserUpdate.php */
+#Submit{
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 500px){
+    #Input-Fields{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #Input-Col1, #Input-Col2{
+        padding: 0;
+        margin: 0;
+    }
+
+    #Input-Col2{
+        margin-top: 10px;
+    }
+
+    #Form-Footer{
+        padding: 0 15px;
+    }
+
+    #Form-Body{
+        padding: 10px 15px;
+    }
+
+    #Register-1{
+        margin: 30px 0 100px;
+    }
+    
+}

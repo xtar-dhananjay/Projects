@@ -1,0 +1,171 @@
+#Main-Coruse{
+    max-width: 100%;
+    width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Course-1 */
+#Course-1{
+    margin-top: 40px;
+}
+
+#Search-Box{
+    position: relative;
+    z-index: 1;
+}
+
+#Search-Box.Active-SearchBox{
+    z-index: -1;
+}
+
+#Search-Box input {
+    background: var(--Light-Blue);
+    border: 1px solid var(--First-Color);
+    padding: 13px 66px 13px 30px;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+#Search-Box .material-icons{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--First-Color);
+}
+
+
+/* Course-2 */
+#Course-2{
+    margin-top: 20px;
+}
+
+#ALl-Courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#ALl-Courses .Course{
+    background: var(--Light-Blue);
+    border-radius: 3px;
+    width: 300px;
+    border: 1px solid var(--First-Color);
+    text-align: center;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+#ALl-Courses .Course img{
+    margin: 10px 0 0 0;
+    width: 95%;
+    border: 1px solid var(--Light-Blue);
+}
+
+#ALl-Courses .Course h2{
+    font-size: 19px;
+    margin: 3px 0;
+    color: var(--Font-Color);
+    text-align: left;
+    margin: 10px 12px 5px 12px;
+    font-weight: 500;
+}
+
+#ALl-Courses .Course .material-icons {
+    font-size: 28px;
+    color: var(--Second-Color);
+}
+
+#ALl-Courses .Course .material-icons.Dactive{
+    color: lightgray;
+}
+
+#ALl-Courses .Course .Ratings{
+    text-align: left;
+    padding-left: 12px;
+}
+
+#ALl-Courses .Course .Price-Per{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#ALl-Courses .Course .Price-Per span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 21px;
+    color: var(--Font-Color);
+    font-weight: 500;
+}
+
+#ALl-Courses .Course .Price-Per .material-icons{
+    color: var(--First-Color);
+    font-size: 30px;
+}
+
+#ALl-Courses .Course button{
+    background: var(--First-Color);
+    width: 95%;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: 500;
+    color: var(--White-Color);
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#ALl-Courses .Course button:active{
+    transform: scale(0.98);
+}
+
+/* Course-3 */
+#Course-3{
+    margin: 50px 0 200px;
+}
+
+#LoadMoreBtn{
+    text-align: center;
+}
+
+#LoadMoreBtn button{
+    background: var(--First-Color);
+    color: var(--White-Color);
+    font-size: 20px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* make Responsive */
+@media (max-width: 665px){
+    #ALl-Courses .Course{
+        width: 400px;
+        max-width: 94%;
+    }
+
+    #LoadMoreBtn button{
+        cursor: default;
+    }
+
+}

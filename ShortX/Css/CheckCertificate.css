@@ -1,0 +1,273 @@
+#Main-CheckCertificate{
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-bottom: 200px;
+}
+
+#Main-CheckCertificate button{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#Main-CheckCertificate button:active{
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+/* Heading-CheckCertificate */
+#Heading-CheckCertificate h2{
+    width: 100%;
+    background: var(--First-Color);
+    padding:15px 0;
+    color: var(--White-Color);
+    font-weight: 400;
+    font-size: 27px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* CheckCertificate-1 */
+#CheckCertificate-1{
+    margin-top: 30px;
+}
+
+#SearchBar{
+    display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#SearchBar button{
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    background: var(--First-Color);
+    border: none;
+    color: var(--White-Color);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#SearchBar input{
+    width: calc(100% - 200px);
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--First-Color);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+/* CheckCertificate-2 */
+#CheckCertificate-2{
+    display: none;
+}
+
+#CheckingStatus{
+    padding: 20px 40px 30px;
+    background: var(--Light-Blue);
+    margin-top: 30px;
+}
+
+#SuccessStatus{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 30px;
+}
+
+#SuccessStatus img{
+    width: 130px;
+}
+
+#SuccessStatus div{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#SuccessStatus div h2{
+    font-size: 35px;
+    margin-bottom: 3px;
+    color: #2196F3;
+    font-weight: 600;
+}
+
+#SuccessStatus div p{
+    color: var(--Para-Color);
+    font-size: 17px;
+}
+
+/* Edit Student Details */
+#StudentDetails{
+    background: rgba(43, 78, 255, 0.3);
+    padding: 20px 30px;
+    border-radius: 3px;
+}
+
+#Cont-Details{
+    display: flex;
+    align-items: center;
+}
+
+#Details-Box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#Details-Box #ImgUser{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+#User-Details{
+    margin-left: 30px;
+}
+
+#User-Details h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--Font-Color);
+}
+
+#User-Details p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#User-Details p:last-child{
+    margin-bottom: 0;
+}
+
+#User-Details p .material-icons{
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--First-Color);
+}
+
+#Details-Box img{
+    width: 60px;
+    float: right;
+}
+
+/* CheckCertificate-3 */
+
+#CheckCertificate-3{
+    background: rgba(224, 79, 95, 0.4);
+    padding: 10px 40px 1px;
+    margin-top: 20px;
+    display: none;
+}
+
+#CheckCertificate-3 .ErrorStatus div h2{
+    color: #E46976;
+}
+
+/* Make Responsive */
+
+
+
+@media (max-width: 750px){
+    #UserCheckIcon{
+        display: none;
+    }   
+}
+
+@media (max-width: 700px){
+    #Cont-Details{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        /* align-items: flex-start; */
+    }
+    #Cont-Details div{
+        text-align: center;
+        width: 90%;
+    }
+    #CheckingStatus{
+        padding: 20px 10px 30px;
+    }
+    #StudentDetails {
+        padding: 20px 0;
+    }
+    #SuccessStatus{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    #SuccessStatus div{
+        margin-top: 15px;
+    }
+    #SuccessStatus div h2 {
+        font-size: 26px;
+    }
+    #SuccessStatus div p {
+        font-size: 15px;
+    }
+    #CheckCertificate-3{
+        padding: 10px 15px 1px;
+    }
+}
+
+@media (max-width: 650px) {
+    #Details-Box button{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 20px;
+        height: 45px;
+        font-size: 18px;
+    }    
+    
+    #Details-Box{
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #Cont-Details{
+        flex-direction: column;
+    }
+    #UserProfile-1{
+        padding: 20px 15px;
+    }
+    #User-Details{    
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    #User-Details p:last-child{
+        word-break: break-all;
+    }
+
+    #SearchBar{
+        flex-direction: column;
+    }
+
+    #SearchBar input{
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    #SearchBar button{
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+}

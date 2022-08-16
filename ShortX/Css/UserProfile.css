@@ -1,0 +1,231 @@
+#Main-UserProfile{
+    max-width: 100%;
+    width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+#Main-UserProfile button{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+/* UserProfile-1 */
+#Main-UserProfile button:active{
+    transform: scale(0.98);
+}
+
+#UserProfile-1{
+    padding: 20px 30px;
+    margin-top: 30px;
+    background: var(--Light-Blue);
+}
+
+#Cont-Details{
+    display: flex;
+    align-items: center;
+}
+
+#Details-Box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#Details-Box img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+#User-Details{
+    margin-left: 30px;
+}
+
+#User-Details h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--Font-Color);
+}
+
+#User-Details p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#User-Details p:last-child{
+    margin-bottom: 0;
+}
+
+#User-Details p .material-icons{
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--First-Color);
+}
+
+#Details-Box button{
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    background: var(--First-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+}
+
+#Details-Box a{
+    width: 100%;
+}
+
+#Details-Box a button{
+    float: right;
+    
+}
+
+/* UserProfile-2 */
+#UserProfile-2{
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+#ALl-Courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#ALl-Courses .Course{
+    background: var(--Light-Blue);
+    border-radius: 3px;
+    width: 300px;
+    border: 1px solid var(--First-Color);
+    text-align: center;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+#ALl-Courses .Course img{
+    margin: 10px 0 0 0;
+    width: 95%;
+    border: 1px solid var(--Light-Blue);
+}
+
+#ALl-Courses .Course h2{
+    font-size: 19px;
+    margin: 3px 0;
+    color: var(--Font-Color);
+    text-align: left;
+    margin: 10px 12px 5px 12px;
+    font-weight: 500;
+}
+
+#ALl-Courses .Course .material-icons {
+    font-size: 28px;
+    color: var(--Second-Color);
+}
+
+#ALl-Courses .Course .material-icons.Dactive{
+    color: lightgray;
+}
+
+#ALl-Courses .Course .Ratings{
+    text-align: left;
+    padding-left: 12px;
+}
+
+#ALl-Courses .Course .Price-Per{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#ALl-Courses .Course .Price-Per span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 21px;
+    color: var(--Font-Color);
+    font-weight: 500;
+}
+
+#ALl-Courses .Course .Price-Per .material-icons{
+    color: var(--First-Color);
+    font-size: 30px;
+}
+
+#ALl-Courses .Course button{
+    background: var(--First-Color);
+    width: 95%;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: 500;
+    color: var(--White-Color);
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#Library-Title{
+    width: 100%;
+    padding: 12px 0;
+    background: var(--First-Color);
+    color: var(--White-Color);
+    font-weight: 500;
+    text-align: center;
+
+}
+
+/* Make Responsive this website */
+@media (max-width: 750px) {
+    #Details-Box button{
+        margin-left: 20px;
+        width: 65px;
+    }    
+    
+}
+
+@media (max-width: 650px) {
+    #Details-Box button{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 20px;
+        height: 45px;
+        font-size: 18px;
+    }    
+    
+    #Details-Box{
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #Cont-Details{
+        flex-direction: column;
+    }
+    #UserProfile-1{
+        padding: 20px 15px;
+    }
+    #User-Details{    
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    #User-Details p:last-child{
+        word-break: break-all;
+    }
+
+}
