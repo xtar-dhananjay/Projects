@@ -1,0 +1,191 @@
+#About-Page{
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 30px;
+    margin-bottom: 180px;
+}
+
+#About-Page img{
+    border: 2px solid var(--Main-Color);
+}
+
+#Company-Vision, #About-Company{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Company-Vision{
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#Company-Vision h2, #About-Company h2{
+    font-size: 30px;
+    color: var(--Main-Color);
+    font-weight: 500;
+}
+
+#Company-Vision p, #About-Company p{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.Vision-Details{
+    margin-right: 30px;
+}
+
+.About-Details{
+    margin-left: 30px;
+}
+
+#Company-Vision img, #About-Company img{
+    width: 600px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#Companay-Wheader{
+    margin-bottom: 60px;
+}
+
+#Companay-Wheader h1{
+    font-weight: 700;
+    color: var(--Font-Color);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#Companay-Wheader hr{
+    height: 5px;
+    background: var(--Main-Color);
+    border: none;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#Company-Head{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#Company-Head img{
+    width: 350px;
+    border-radius: 3px;
+}
+
+#CEO, #ChairMan, .Team{
+    background: var(--White-Color);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 20px 5px 0;
+}
+
+.Team{
+    margin: 30px 5px 0;
+    /* margin-top: 15px; */
+}
+
+#Company-Head h2, .Team p{
+    font-weight: 500;
+    color: var(--Main-Color);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#Team{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#Team .Team img{
+    width: 300px;
+    border-radius: 3px;
+}
+
+
+@media (max-width: 1149px){
+    #Company-Vision img, #About-Company img{
+        width: 500px;
+    }
+    #Company-Vision p, #About-Company p{
+        font-size: 16px;
+    }
+    #Team{
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 1000px){
+    #Company-Vision, #About-Company{
+        flex-direction: column;
+    }
+    .About-Details{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .Vision-Details{
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    #Company-Vision img, #About-Company img{
+        width: 100%;
+    }
+    #Company-Vision p, #About-Company p{
+        margin-top: 0;
+    }
+    #Companay-Wheader h1{
+        font-size: 35px;
+    }
+    #Companay-Wheader hr{
+        width: 450px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 833px){
+    #Company-Head img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 740px){
+    #Company-Head img, #Team .Team img{
+        width: 270px;
+    }
+
+}
+
+@media (max-width: 700px){
+    
+    #Company-Head img, #Team .Team img{
+        width: 100%;
+    }
+    #About-Page{    
+        padding: 0 10px;
+        margin-top: 15px;
+    }
+
+    #Companay-Wheader h1{
+        font-size: 28px;
+    }
+
+    #CEO, #ChairMan, .Team{
+        width: 100%;
+    }
+
+    #Team{
+        display: block;
+    }
+
+}

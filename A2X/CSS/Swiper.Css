@@ -1,0 +1,30 @@
+.swiper {
+    width: 100%;
+    height: 450px;
+}
+
+.swiper img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1308px) {
+    .swiper {
+        height: unset;
+    }   
+}
+
+@media (max-width: 850px) {
+    .swiper {
+        width: 100%;
+        margin-top: 0px;
+    }   
+    
+    .swiper img{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+    
+}

@@ -1,0 +1,173 @@
+#Contact-Page{
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0 30px;
+    margin-bottom: 180px;
+}
+
+#Contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#Contact-Details{
+    width: 40%;
+}
+
+#Contact-Form{
+    width: 55%;
+}
+
+.Details{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.Details:last-child{
+    margin-bottom: 0;
+}
+
+.Icons span{
+    font-size: 34px;
+    color: var(--Main-Color);
+}
+
+.Title{
+    margin-left: 20px;
+}
+
+.Title h2{
+    color: var(--Main-Color);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.Title p{
+    color: var(--Para-Color);
+    font-size: 17px ;
+}
+
+#Contact-Form{
+    background: var(--White-Color);
+    border-radius: 5px;
+    padding: 20px 30px;
+    box-shadow: #6666ff3f 0px 3px 8px;
+}
+
+#Contact-Form .FormHead h2{
+    padding: 10px 0 25px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--Font-Color);
+}
+
+#Form-Input .input{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Form-Input .input input{
+    width: 48%;
+    margin-bottom: 13px;
+    padding: 6px 20px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-weight: 400;
+    outline: none;
+}
+
+#Form-Input textarea{
+    width: 100%;
+    padding: 6px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    height: 100px;
+}
+
+#Form-Input button{
+    padding: 6px 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--White-Color);
+    background: var(--Main-Color);
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Form-Input button:active{
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 1100px){
+
+
+    #Contact-Details{
+        width: 37%;
+    }
+    
+    #Contact-Form{
+        width: 60%;
+    }
+    #Form-Input .input input, #Form-Input textarea{
+        padding: 6px 15px;
+    }
+}
+
+
+@media (max-width: 1100px){
+    #Contact{
+        flex-direction: column-reverse;
+    }
+
+    #Contact-Details{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    #Contact-Form{
+        width: 100%;
+    }
+    
+    #Form-Input button{
+        cursor: default;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    #Contact-Page{
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+    #Contact-Form {
+        padding: 20px 15px;
+    }
+    #Form-Input .input{
+        flex-direction: column;
+    }
+    #Form-Input .input input{
+        width: 100%;
+    }
+    #FormSubmit{    
+        width: 100%;
+        height: 47px;
+        margin-bottom: 10px;
+    }
+    #Contact{
+        margin-top: 25px;
+    }
+}

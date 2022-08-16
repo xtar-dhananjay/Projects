@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Img With Ajax</title>
+
+    <!-- Extranl Css File -->
+    <link rel="stylesheet" href="Css/style.Css">
+
+    <!-- This is CDN Link for google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <!-- this is the jquery CDN file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="Container">
+        <header>
+            <h2>Drang And Drop Img</h2>
+            <button id="Upload">Upload</button>
+        </header>
+        <form id="Form">
+            <input type="file" hidden name="file" id="File" multiple>
+            <span id="DropTitle"><h2>Drop Img In This Area</h2></span>
+            <span id="Brouse">Brouse</span>
+        </form>
+        <section id="ImageContaienr">
+        </section>
+    </div>
+
+    <!-- <script src="Js/Drop.js"></script> -->
+    <script src="Js/Fetch.js"></script>
+</body>
+</html>

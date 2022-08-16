@@ -1,0 +1,11 @@
+:root{
+    --Main-Color: #6666FF;
+    --Second-Main: #4545ff;
+    --White-Color: #ffffff;
+    --Font-Color: #333333;
+    --Para-Color: #4e4e4e;
+}
+p::selection{
+    background: #a1a1ff;
+    color: var(--White-Color);
+}

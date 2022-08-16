@@ -1,0 +1,184 @@
+#Category-Head{
+    margin: 20px;
+    background: var(--Main-Color);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+#Category-Head h2{
+    color: var(--White-Color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#Category-Head button{
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    background: var(--White-Color);
+    color: var(--Main-Color);
+    font-size: 18px;
+    border-radius: 3px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+#Category-Head button:active{
+    transform: scale(0.98);
+}
+
+#Category-body{
+    margin: 20px;
+    background: var(--White-Color);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#Category-body table{
+    width: 100%;
+    min-width: 768px;
+    text-align: center;
+    border-collapse: collapse;
+    border-color: var(--Main-Color);
+    border-radius: 5px;
+}
+
+#Category-body table td, #Category-body table th{
+    padding: 10px;
+}
+
+#Category-body table th{
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    
+}
+
+#Category-body table td{
+    font-size: 18px;
+    color: var(--Para-Color);
+}
+
+#Category-body table td i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#Category-body table td i.Edit{
+    color: var(--Green-Color);
+}
+
+#Category-body table td i.Trash{
+    color: var(--Danger-Color);
+}
+
+/* Start Bulding Category Add area */
+#Category-Page .CategoryForm{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 6;
+    background: #6666ffb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s cubic-bezier(0.18, 1.18, 0.08, 1.14);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    z-index: -100;
+}
+
+#Category-Page .CategoryForm.Active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 100;
+}
+
+#Category-Page .CategoryForm .CatForm{
+    border-radius: 3px;
+    padding: 20px;
+    background: var(--White-Color);
+    width: 400px;
+    max-width: 96%;
+}
+
+#Category-Page .CategoryForm .CategoryForm-Head h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Font-Color);
+    padding: 5px 0 20px;
+}
+
+#Category-Page .CategoryForm form input{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+#Category-Page .CategoryForm form .Form-Btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#Category-Page .CategoryForm form .Form-Btn button{
+    width: 48%;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    height: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+#Category-Page .CategoryForm form .Form-Btn button:first-child{
+    background: transparent;
+    color: var(--Main-Color);
+    border: 1px solid var(--Main-Color);
+}
+
+#Category-Page .CategoryForm form .Form-Btn button:active{
+    transform: scale(0.98);
+}
+
+@media (max-width: 830px){
+    #Category-Page .CategoryForm form .Form-Btn button{
+        cursor: default;
+    }
+    
+    #Category-body table td i{
+        cursor: default;
+    }
+        
+    #Category-Head button{
+        cursor: default;
+    }
+}
+
+@media (max-width: 700px){
+    #Category-Head{
+        flex-direction: column;
+    }
+    #AddCategory-BTN{
+        margin-top: 20px;
+    }
+    
+}

@@ -1,0 +1,250 @@
+#Users-Page{
+    margin: 20px 30px;
+}
+
+#Users-Head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--Main-Color);
+    border-radius: 4px;
+}
+
+#Users-Head h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--White-Color);
+}
+
+#Users-Head button{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    background: var(--White-Color);
+    color: var(--Main-Color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#Users-Head button:active{
+    transform: scale(0.98);
+}
+
+/* Start Bulding form Table section */
+#Users-Body{
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#Users-Body table{
+    width: 100%;
+    min-width: 768px;
+    text-align: center;
+    border-collapse: collapse;
+    border-color: var(--Main-Color);
+    border-radius: 5px;
+}
+
+
+#Users-Body table td, #Users-Body table th{
+    padding: 10px;
+}
+
+#Users-Body table th{
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    
+}
+
+#Users-Body table td{
+    font-size: 18px;
+    color: var(--Para-Color);
+}
+
+#Users-Body table td i{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#Users-Body table td i.Edit{
+    color: var(--Green-Color);
+}
+
+#Users-Body table td i.Trash{
+    color: var(--Danger-Color);
+}
+
+/* Start Form area */
+
+#Users-Page .AddUser-Page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #6666ffb2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s cubic-bezier(0.18, 1.18, 0.08, 1.14);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    z-index: -100;
+}
+
+#Users-Page .AddUser-Page.Active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 100;
+}
+
+.User-Form{
+    padding: 20px;
+    background: var(--White-Color);
+    width: 500px;
+    max-width: 96%;
+    border-radius: 4px;
+}
+
+.User-Form form input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--Font-Color);
+}
+
+.password{
+    position: relative;
+}
+
+.password i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--Font-Color);
+    cursor: pointer;
+}
+
+.AddUser-Head h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: var(--Font-Color);
+    font-weight: 600;
+}
+
+.User-Form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 18px;
+    color: var(--Font-Color);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.OprationBtn{
+    float: right;
+}
+
+.OprationBtn button{
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.OprationBtn button:first-child{
+    background: transparent;
+    color: var(--Main-Color);
+    border: 1px solid var(--Main-Color);
+}
+
+.OprationBtn button:active{
+    transform: scale(0.98);
+}
+
+.UserImg{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+    background: var(--Second-Main);
+}
+
+.UserImg i{
+    line-height: 100px;
+    font-size: 25px;
+    color: var(--Main-Color);
+}
+
+.UserImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 830px){
+    .OprationBtn button,
+    #Users-Head button,
+    #Users-Body table td i,
+    .password i{
+        cursor: default;
+    }
+}
+
+@media (max-width: 700px){
+
+    #Users-Head{
+        flex-direction: column; 
+    }
+
+    #Users-Head button{
+        margin-top: 10px;
+    }
+    
+    #Users-Page{
+        margin: 20px 10px;
+    }
+    
+}
+
+@media (max-width: 474px){
+
+    .OprationBtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .OprationBtn button{
+        float: unset;
+        width: 48%;
+    }   
+}

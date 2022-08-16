@@ -1,0 +1,378 @@
+#Product-Page{
+    margin: 20px 30px;
+}
+
+#Head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--Main-Color);
+    padding: 20px 30px;
+    border-radius: 3px;
+}
+
+#Head h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--White-Color);
+}
+
+#Head button{
+    background: var(--White-Color);
+    border: none;
+    font-size: 18px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    color: var(--Main-Color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Start making product section */
+#AllProdcut{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+#AllProdcut .Product{
+    width: 280px;
+    background: var(--White-Color);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#AllProdcut .Product img{
+    width: 100%;
+}
+
+#AllProdcut .Product button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 18px;
+    color: var(--White-Color);
+    background: var(--Main-Color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#AllProdcut .Product button:active{
+    transform: scale(0.98);
+}
+
+#AllProdcut .Product .Pro-Btn{
+    padding: 10px;
+}
+
+#AllProdcut .Product .Up-Vi{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#AllProdcut .Product .Up-Vi button{
+    width: 49%;
+}
+
+#AllProdcut .Product .Delete{
+    background: transparent;
+    color: var(--Main-Color);
+    border: 1px solid var(--Main-Color);
+}
+
+/* Start Making Add Product Area */
+#AddProduct, #UpdateProduct{
+    background: #6666ffb2;
+    position: fixed;
+    z-index: 7000;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    right: 30px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -100;
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform 0.5s cubic-bezier(0.18, 1.18, 0.08, 1.14);
+}
+
+#AddProduct.Active, #UpdateProduct.Active{
+    opacity: 1;
+    z-index: 100;
+    pointer-events: auto;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}
+
+#AllProdcut .Product .Pro-Btn a{
+    width: 48%;
+}
+
+#AllProdcut .Product .Pro-Btn a button{
+    width: 100%;
+}
+
+#Product-Form, #UpProduct-Form{
+    width: 800px;
+    max-width: 97%;
+    background: var(--White-Color);
+    padding: 20px;
+    border-radius: 4px;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+#ProForm-Head h2, #UpProForm-Head h2{
+    font-size: 35px;
+    color: var(--Font-Color);
+    text-align: center;
+    margin: 20px 0 30px;
+    font-weight: 700;
+}
+
+#Product-Form form input,#Product-Form form textarea, #UpProduct-Form form input,#UpProduct-Form form textarea {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    color: var(--Font-Color);
+    outline: none;
+}
+
+#Product-Form form textarea,#UpProduct-Form form textarea{
+    resize: none;
+    height: 100px;
+}
+
+#Drop-Head, #UpDrop-Head{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Main-Color);
+    padding: 12px 30px;
+    color: var(--White-Color);
+    align-items: center;
+}
+
+#DropImg, #UpDropImg {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#Drop-Head button, #UpDrop-Head button{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 50px;
+    border: none;
+    color: var(--Main-Color);
+    font-weight: 500;
+    border-radius: 3px;
+    background: var(--White-Color);
+    cursor: pointer;
+}
+
+#All-Drops, #All-UpDrops{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Second-Main);
+    flex-wrap: wrap;
+    padding: 0 10px 10px;
+    height: 188px;
+    max-height: 190px;
+    overflow: auto;
+}
+
+#All-Drops .DropPhotos, #All-UpDrops .DropPhotos{
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+#All-Drops .DropPhotos i, #All-UpDrops .DropPhotos i{
+    position: absolute;
+    top: 5px;
+    font-size: 20px;
+    color: var(--Main-Color);
+    right: 10px;
+    cursor: pointer;
+}
+
+#All-Drops .DropPhotos img, #All-UpDrops .DropPhotos img{
+    width: 100%;
+}
+
+#Table-Details h2, #UpTable-Details h2{
+    margin: 30px 0 20px;
+    color: var(--Font-Color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#ALlTbale-Rows .inputs input, #UpTbale-Rows .inputs input{
+    width: 300px;
+    max-width: 48%;
+    padding: 6px 15px;
+    margin: 0;
+}
+
+#ALlTbale-Rows .inputs, #UpTbale-Rows .inputs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#ALlTbale-Rows .inputs span i, #UpTbale-Rows .inputs span i{
+    color: lightgray;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+#ALlTbale-Rows .inputs input:first-child, #UpTbale-Rows .inputs input:first-child{
+    margin-right: 10px;
+}
+
+#AddRow-Btn, #UpAddRow-Btn{
+    padding: 8px 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--White-Color);
+    background: var(--Main-Color);
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#Table-Details button i, #UpTable-Details button i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#ProUp-Btns, #Up-ProUp-Btns{
+    float: right;
+}
+
+#ProUp-Btns button, #Up-ProUp-Btns button{
+    padding: 10px 70px;
+    border: none;
+    font-size: 18px;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+#ProUp-Btns button:first-child, #Up-ProUp-Btns button:first-child{
+    border: 1px solid var(--Main-Color);
+    color: var(--Main-Color);
+    background: unset;
+}
+
+#ProUp-Btns button:active, #Up-ProUp-Btns button:active{
+    transform: scale(0.98);
+}
+
+
+/* End Making Add Product Area */
+
+/* this is for select Category area */
+.SelectCategory{
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    color: var(--Font-Color);
+    outline: none;
+    border-radius: 3px;
+}
+
+@media (max-width: 1742px){
+    #AllProdcut{
+        justify-content: space-around;
+    }   
+
+}
+
+
+@media (max-width: 700px){
+    #Product-Page{
+        margin: 20px 10px;
+    }
+    #Product-Page #Head{
+        flex-direction: column;
+    }
+    #Head button{
+        margin-top: 20px;
+        cursor: default;
+    }
+    #AllProdcut .Product{
+        width: 48%;
+    }
+    #AllProdcut .Product .Pro-Btn{
+        padding: 0px;
+    }
+    #AllProdcut .Product button{
+        font-size: 15px;
+        cursor: default;
+    }
+    #ProUp-Btns, #Up-ProUp-Btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #ProUp-Btns button, #Up-ProUp-Btns button{
+        padding: 0;
+        width: 48%;
+        height: 40px;
+    }
+    #All-Drops, #All-UpDrops{
+        justify-content: space-around;
+    }
+    #Drop-Head h2, #UpDrop-Head h2{
+        display: none;
+    }
+    #Drop-Head button, #UpDrop-Head button{
+        width: 100%;
+    }
+    #Product-Form, #UpProduct-Form{
+        padding: 10px;
+    }
+    #ProForm-Head h2, #UpProForm-Head h2{
+        font-size: 30px;
+    }
+    #All-Drops .DropPhotos, #All-UpDrops .DropPhotos{
+        width: 48%;
+    }
+    #Product-Form button, #UpProduct-Form button{
+        cursor: default;
+    }
+    #All-Drops, #All-UpDrops{
+        height: 150px;
+    }
+    #ALlTbale-Rows .inputs input, #UpTbale-Rows .inputs input{
+        max-width: 43%;
+    }
+    #ALlTbale-Rows .inputs input:first-child, #UpTbale-Rows .inputs input:first-child{
+        margin-right: 5px;
+    }
+}

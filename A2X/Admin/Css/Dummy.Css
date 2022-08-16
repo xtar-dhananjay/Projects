@@ -1,0 +1,66 @@
+
+/* Start show message */
+.ErrorMessage{
+    display: flex;
+    background: #ffcec3;
+    color: #ff6644;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #ff6644;
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 100px;
+    transition: transform 0.5s cubic-bezier(0.18, 1.18, 0.08, 1.14);
+    z-index: -100;
+    pointer-events: none;
+    opacity: 0;
+    max-width: 96%; 
+    text-align: center;
+    align-items: center;
+}
+
+#WarningContainer{
+    background: red;
+}
+
+.ErrorMessage p{
+    font-size: 16px;
+}
+
+.ErrorMessage i{
+    margin-right: 10px;
+}
+
+#Error-Message.Active{
+    z-index: 100;
+    opacity: 1;
+    pointer-events: auto;
+    /* transform: scale(1); */
+}
+
+#Success-Message.Active{
+    z-index: 100;
+    opacity: 1;
+    pointer-events: auto;
+    /* transform: scale(1); */
+}
+
+#Success-Message{
+    background: #2fdd2f36;
+    border: 1px solid #21a821;
+    color: #21a821;
+}
+
+@media (max-width: 700px){
+    
+    .ErrorMessage{
+        margin-bottom: 40px;
+    }
+}
+
+/* End show message */
+
+

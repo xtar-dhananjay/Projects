@@ -1,0 +1,309 @@
+#Gallery-Page{
+    margin: 20px 30px;
+    padding-bottom: 100px;
+}
+
+#Gallery-Head{
+    background: var(--Main-Color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+
+#Gallery-Head h2{
+    color: var(--White-Color);
+    font-size: 28px;
+    color: var(--White-Color);
+}
+
+#Gallery-Head button{
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Main-Color);
+    border: none;
+    border-radius: 4px;
+    background: var(--White-Color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+#Gallery-Head button:active{
+    transform: scale(0.98);
+}
+
+/* Start Making Gallery-Body Part */
+#Gallery-Body{
+    margin-top: 20px;
+}
+
+#All-Photos{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+#All-Photos .Photo{
+    width: 350px;
+    max-width: 100%;
+    background: var(--White-Color);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+#All-Photos .Photo img{
+    border-radius: 3px;
+    width: 100%;
+}
+
+#All-Photos .Photo .Opraiton-Btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#All-Photos .Photo .Opraiton-Btn button{
+    width: 48%;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--White-Color);
+    border: none;
+    border-radius: 3px;
+    background: var(--Main-Color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#All-Photos .Photo .Photo-Details p{
+    color: var(--Para-Color);
+    font-size: 16px;
+
+}
+
+#All-Photos .Photo .Opraiton-Btn button.PhotoDel-Btn{
+    background: transparent;
+    color: var(--Main-Color);
+    border: 1px solid var(--Main-Color);
+}
+
+#All-Photos .Photo .Opraiton-Btn button:active{
+    transform: scale(0.98);
+}
+
+/* Start Building Add Photo Area */
+#Gallery-Page .AddPhoto-Page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6666ffb2;
+    padding: 10px;
+    opacity: 0;
+    z-index: -100;
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform 0.5s cubic-bezier(0.18, 1.18, 0.08, 1.14);
+}
+
+#Gallery-Page #AddImg-Page.Active{
+    opacity: 1;
+    z-index: 100;
+    pointer-events: auto;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}
+
+#UpImg-Page.Active{
+    opacity: 1;
+    z-index: 100;
+    pointer-events: auto;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}
+
+.AddPhoto-Form h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 30px;
+    font-weight: 600;
+    color: var(--Main-Color);
+}
+
+#Gallery-Page .AddPhoto-Page .AddPhoto-Form{
+    padding: 20px;
+    background: var(--White-Color);
+    border-radius: 4px;
+    width: 700px;
+}
+
+.ChooseFile{
+    width: 56%;
+    height: 400px;
+    background: var(--Second-Main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.ChooseFile h2{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: 1px dotted var(--Main-Color);
+    color: var(--Main-Color);
+    border-radius: 5px;
+}
+
+.AddPhoto-Form form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddPhoto-Form textarea{
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    font-weight: 500;
+    resize: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    outline: none;
+}
+
+.PhotoDetials{
+    width: 40%;
+    float: right;
+}
+
+.ChooseFile img{
+    width: 100%;
+}
+
+.CU-Btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CU-Btn button{
+    width: 48%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.CU-Btn button:first-child{
+    background: transparent;
+    color: var(--Main-Color);
+    border: 1px solid var(--Main-Color);
+}
+
+.CU-Btn button:active{
+    transform: scale(0.98);
+}
+
+
+
+/* Start Media Query section */
+@media (max-width: 1841px){
+        
+    #All-Photos{
+        justify-content: space-around;
+    }
+
+}
+
+
+@media (max-width: 1100px){
+        
+    #All-Photos .Photo{
+        width: 45%;
+    }
+
+}
+
+
+@media (max-width: 830px){
+    #Gallery-Head button{
+        cursor: default;
+    }
+    #All-Photos .Photo .Opraiton-Btn button{
+        cursor: default;
+    }
+    .CU-Btn button{
+        cursor: default;
+    }
+}
+
+
+@media (max-width: 700px){
+        
+    #Gallery-Head{
+        flex-direction: column;
+    }
+        
+    #Gallery-Head button{
+        margin-top: 20px;
+    }
+
+    #All-Photos{
+        justify-content: space-between;
+    }
+
+    #Gallery-Page{
+        margin: 20px 10px;
+    }
+
+    #All-Photos .Photo{
+        width: 49%;
+        margin: 0;
+        margin-top: 15px;
+    }
+        
+    #All-Photos .Photo .Photo-Details p{
+        font-size: 13px;
+    }
+
+    .AddPhoto-Form form{
+        flex-direction: column;
+    }
+
+    .ChooseFile{
+        width: 100%;
+    }
+    
+    .PhotoDetials{
+        width: 100%;
+    }
+
+    .AddPhoto-Form textarea{
+        height: 100px;
+    }
+    .ChooseFile{
+        height: 300px;
+        padding: 10px;
+    }
+}

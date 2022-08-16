@@ -1,0 +1,212 @@
+#index-Page{
+    padding-bottom: 100px;
+}
+
+#Top-Record{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Top-Record .Desc{
+    min-width: 350px;
+    background: var(--White-Color);
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 20px;
+    margin: 20px;
+    flex-grow: 2;
+}
+
+#Top-Record .Desc i{
+    font-size: 40px;
+    color: var(--Main-Color);
+    margin-left: 20px;
+}   
+
+#Top-Record .Desc .Card h2{
+    font-size: 30px;
+    color: var(--Font-Color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#Top-Record .Desc .Card h3{
+    font-size: 20px;
+    color: var(--Main-Color);
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+/* Start Making the last 10 Inquiry */
+#Last-Inquiry{
+    padding: 20px 20px 10px;
+    margin: 5px 20px;
+    overflow: auto;
+    background: var(--White-Color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+}
+
+#L-Ihead{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 30px;
+    color: var(--Font-Color);
+    font-weight: 500;
+
+}
+
+#Last-Inquiry table{
+    min-width: 1000px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid var(--Main-Color);
+    border-radius: 5px;
+    
+}
+
+#Last-Inquiry table tr{
+    border-bottom: 1px solid var(--Main-Color);
+    transition: all 0.3s cubic-bezier(0.1, 1.15, 0.41, 1.11);
+}
+
+#Last-Inquiry table tbody tr:hover{
+    background: #9999ff;
+    color: var(--White-Color);
+}
+
+
+#Last-Inquiry table thead{
+    background: var(--Main-Color);
+}
+
+#Last-Inquiry table th{
+    color: var(--White-Color);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#Last-Inquiry table td, #Last-Inquiry table th {
+    padding: 10px;
+}
+
+#Last-Inquiry table td{
+    padding: 12px;
+}
+
+.SoNo{
+    text-align: center;
+}
+
+
+#All-Inquiry{
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    border-radius: 4px;
+    margin: 20px 0;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+#All-Inquiry:active{
+    transform: scale(0.98);
+}
+
+#LoadALlInquiry{
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Start Building Quick Access */
+  
+#Quick-Access{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+#Quick-Access .Quick{
+    flex-grow: 2;
+    background: var(--Second-Main);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    width: 300px;
+    max-width: 100%;
+}
+
+#Quick-Access .Quick h2{
+    color: var(--White-Color);
+    font-size: 29px;
+    font-weight: 600;
+}
+
+#Quick-Access .Quick button{
+    margin: 20px 0 0;
+    padding: 10px 50px;
+    border: none;
+    font-size: 18px;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Quick-Access .Quick button:active{
+    transform: scale(0.98);
+}
+
+@media (max-width: 830px){
+
+    #Top-Record .Desc {
+        cursor: default;
+    }
+    #All-Inquiry{
+        cursor: default;
+    }
+    #Last-Inquiry table tbody tr:hover{
+        background: unset;
+        color: unset;
+    }
+    
+}
+
+@media (max-width: 700px){
+    #Top-Record{
+        margin-top: 10px;
+    }
+    #Top-Record .Desc {
+        width: 100%;
+        min-width: unset;
+        flex-grow: unset;
+        margin: 10px;
+    }
+    #Top-Record .Desc i{
+        margin-left: 0;
+    }
+    #Last-Inquiry{
+        padding: 20px 10px;
+    }
+    #Last-Inquiry{
+        margin: 10px 10px;
+    }
+    #Quick-Access .Quick{
+        margin: 10px;
+    }
+}

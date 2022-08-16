@@ -1,0 +1,21 @@
+:root{
+    --Main-Color: #6666FF;
+    --Second-Main: #9595ff;
+    --White-Color: #ffffff;
+    --Font-Color: #333333;
+    --Para-Color: #4e4e4e;
+    --Page-Color: #D6EAF8;
+    --Green-Color: #29be29;
+    --Danger-Color: #ff4646;
+}
+p::selection{
+    background: #a1a1ff;
+    color: var(--White-Color);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}

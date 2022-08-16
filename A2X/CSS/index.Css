@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+
+#index-Content, #Product-List, #Manufac{
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+/* Start Bulding Manufacturer section */
+#Manufac{
+    margin-bottom: 60px;
+}
+
+#Manufac .Manu-de-1, #Manufac .Manu-de-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#Manufac .Manu-de-1 .Manunf-Details, #Manufac .Manu-de-2 .Manunf-Details{
+    margin-left: 20px;
+    font-size: 19px;
+    text-align: justify;
+    color: var(--Para-Color);
+    font-weight: 400;
+}
+
+#Manufac .Manu-de-2 .Manunf-Details {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+#Manufac .Manu-de-1 img, #Manufac .Manu-de-2 img{
+    width: 700px;
+    border-radius: 5px;
+}
+
+#ContactNow{
+    margin-top: 70px;
+    position: relative;
+}
+
+#ContactNow img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#ContactNow-Detai{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#ContactNow-Detai h2{
+    font-size: 40px;
+    color: var(--Font-Color);
+    margin-bottom: 10px;
+}
+
+#ContactNow-Detai button{
+    padding: 10px 50px;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#ContactNow-Detai button:active{
+    transform: scale(0.98);
+    z-index: 1;
+}
+
+@media (max-width: 1283px){
+
+    #Manufac .Manu-de-1, #Manufac .Manu-de-2{
+        flex-direction: column;
+    }
+
+    #Manufac .Manu-de-2{
+        flex-direction: column-reverse;
+    }
+
+    #Manufac .Manu-de-2 .Manunf-Details {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    #Manufac .Manu-de-1 .Manunf-Details {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    #Manufac .Manu-de-1 img, #Manufac .Manu-de-2 img{
+        width: 100%;
+    }
+
+}
+
+
+/* Start Building Category section */
+
+#Category-head, #Products-Head, #Manufac-Head{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#Products-Head{
+    margin-top: 70px;
+}
+
+#Manufac-Head{
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+#Category-head h1, #Products-Head h1, #Manufac-Head h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#Category-head hr, #Products-Head hr, #Manufac-Head hr{
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    width: 300px;
+    margin: auto;
+    background: var(--Main-Color);
+    margin-top: 5px;
+}
+
+#Products-Head hr, #Manufac-Head hr{
+    width: 450px;
+}
+
+#Category-Img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Category-Img img{
+    border-radius: 15px;
+    width: 250px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#Category-Img img:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (max-width: 1280px) {
+    #Products{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1100px) {
+    #Category-Img img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #Category-Img img{
+        width: 150px;
+        cursor: default;
+    }    
+
+    #Category-Img img:hover{
+        box-shadow: unset;
+    }
+
+    #Category-head hr, #Products-Head hr, #Manufac-Head hr{
+        height: 4px;
+        width: 210px;
+    }
+
+    #Products-Head hr{
+        width: 330px;
+        max-width: 100%;
+    }
+
+    #Manufac-Head hr{
+        width: 400px;
+        max-width: 100%;
+    }
+
+    #Category-head h1, #Products-Head h1, #Manufac-Head h1{
+        font-size: 30px;
+    }
+
+    #Category-head, #Products-Head{
+        margin-top: 20px;
+        margin-bottom: 28px;
+    }
+
+    #Category-Img a{
+        cursor: default;
+    }
+
+    #ContactNow{
+        margin-top: 50px;
+    }
+
+    #Manufac .Manu-de-1, #Manufac .Manu-de-2{
+        margin-top: 50px;
+    }
+}
+
+/* Start Building Product section */
+
+#Product-List a{
+    text-decoration: none;
+    color: var(--Font-Color);
+}
+
+.Product{
+    width: 300px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.Product:hover{
+    box-shadow: rgba(36, 36, 36, 0.19) 0px 10px 20px, rgba(51, 51, 51, 0.23) 0px 6px 6px;
+}
+
+.Product .Details .Product-Title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.Details{
+    padding: 8px 15px;
+}
+
+.Details .Price{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Main-Color);
+}
+
+.Product img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#Products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#SeeallPro{
+    text-align: center;
+    margin-top: 27px;
+}
+
+#All-Products{
+    padding: 10px 50px;
+    border: none;
+    background: var(--Main-Color);
+    color: var(--White-Color);
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#All-Products:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#All-Products:active{
+    transform: scale(0.98);
+}
+
+@media (max-width: 959px){
+    #Products{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px){
+    
+    #index-Content, #Product-List, #Manufac{
+        padding: 0 10px;
+    }
+    #Category-Img{
+        justify-content: space-around;
+    }
+    #Category-Img img{
+        border-radius: 8px;
+    }
+    #Products-Head hr{
+        width: 90%;
+    }
+    .Product{
+        width: 100%;
+    }
+
+    .Product .Details .Product-Title{
+        font-size: 15px;
+    }
+
+    .Details .Price{
+        font-size: 19px;
+    }
+
+    #Products{
+        justify-content: space-between;
+    }
+
+    #All-Products{
+        cursor: default;
+    }
+
+    #All-Products:hover{
+        box-shadow: unset;
+    }
+    #SeeallPro{
+        margin-top: 15px;
+    }
+
+    #ContactNow img{
+        height: 150px;
+    }
+
+    #ContactNow-Detai h2{
+        font-size: 25px;
+        color: var(--Font-Color);
+        margin-bottom: 6px;
+    }
+
+    #ContactNow-Detai button{
+        padding: 7px 30px;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: default;
+    }
+
+    #Manufac .Manu-de-1 .Manunf-Details, #Manufac .Manu-de-2 .Manunf-Details{
+        font-size: 15px;
+        color: var(--Para-Color);
+        font-weight: 400;
+    }
+
+    #Manufac-Head hr{
+        width: 300px;
+        max-width: 100%;
+    }
+
+    #Product-List a{
+        width: 48%;
+    }
+
+    #Category-Img a{
+        width: 44%;
+    }
+
+    #Category-Img img{
+        width: 100%;
+    }
+
+    .Product img{
+        height: 50vw;
+    }
+
+}

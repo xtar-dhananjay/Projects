@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #D6EAF8;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 30px;
+}
+.navbar{
+  position: sticky;
+  z-index: 5;
+  width: 100%;
+  padding: 13px 0;
+  transition: all 0.3s ease;
+  background:var(--Main-Color);
+  top: 0;
+}
+.navbar.sticky{
+  padding: 13px 0;
+  background: var(--Main-Color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: var(--White-Color);
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+  margin-left: 50px;
+}
+.menu-list li a{
+  color: var(--White-Color);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border 0.3s ease;
+}
+.menu-list li a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.menu-list li a.active:after {
+  width: 100%;
+  background: var(--White-Color);
+}
+.menu-list li a:hover:after {
+  width: 100%;
+  background: var(--White-Color);
+}
+.banner{
+  height: 100vh;
+  background: url("../Img/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 40px 0;
+}
+.about .title{
+  font-size: 35px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: var(--White-Color);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar.sticky .icon.cancel-btn{
+  top: 10px;
+}
+
+/* This is Start fixed Whatsapp and Call section Css Code */
+#Contact-UDetials{
+  width: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 15%;
+  z-index: 100;
+}
+
+#Contact-UDetials a img{
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 1658px){
+  
+  #Contact-UDetials{
+    right: 10%;
+  }
+}
+
+@media (max-width: 1253px){
+
+  #Contact-UDetials{
+    right: 25px;
+  }
+}
+
+@media (max-width: 700px){
+
+  #Contact-UDetials{
+    right: 25px;
+    width: 50px;
+    bottom: 20px;
+  }
+}
+
+/* This is End fixed Whatsapp and Call section Css Code */
+
+@media (max-width: 900px) {
+  body.disabledScroll{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .icon.cancel-btn{
+    display: none;
+  }
+  .icon.cancel-btn.show{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    top: -12px;
+    left: 0;
+    height: calc(100vh + 12px);
+    width: 100%;
+    background: var(--Main-Color);
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    margin-top: 37px;
+  }
+  .menu-list li{
+    margin-left: 0;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+  }
+  .menu-list li a.active:after {
+    width: 20%;
+    background: var(--White-Color);
+  }
+  .menu-list li a{
+    cursor: default;
+  }
+  .logo a{
+    cursor: default;
+  }
+  .icon i{
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .navbar.sticky{
+    padding: 10px 0;
+  }
+  .cancel-btn i{
+    margin: 24px 10px 0 0;
+  }
+  #Contact-UDetials a{
+    cursor: default;
+  }
+}
+
+@media (max-width: 700px){
+
+  .menu-list li a.active:after {
+    width: 35%;
+  }
+}
